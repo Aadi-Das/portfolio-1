@@ -1,0 +1,309 @@
+/* center aline the following h */
+h2,h3{
+  text-align: center;
+  /* color: rgb(217, 217, 217); */
+}
+
+/* styling */
+h1{
+  text-align: left;
+  color: rgb(217, 217, 217);
+  font-weight:600;
+  font-family: cursive;
+}
+
+/* prevent click */
+.navi{
+  pointer-events: none;
+}
+
+/*burgerbar styling  */
+.bars {
+position: absolute;
+width: 40px;
+top: 20px;
+right: 15px;
+cursor: pointer;
+z-index: 10;
+}
+
+/* bar style and position */
+span::before,
+span::after {
+content: "";
+background-color: #000000;
+width: 70%;
+height: 5px;
+position: absolute;
+}
+
+.bar::after {
+transform: translateY(9px);
+}
+
+/* Navbar Links CSS */
+/* stylind and positioning */
+#nav a {
+color: #aaaaaa;
+text-decoration: none;
+line-height: 6vw;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+text-indent: 50vw;
+border-radius: 50%;
+transition: all .5s;
+}
+
+#nav a:hover {
+background: #633c88;
+}
+
+
+.shape-circle {
+border-radius: 50%;
+width: 20vw;
+height: 20vw;
+top: -10vw;
+right: -10vw;
+position: absolute;
+transition: all 1s ease-in-out;
+background: rgb(217, 217, 217);
+}
+
+/* size each  part, teansition ans styling */
+
+nav.visible li:first-child {
+width: 200vw;
+height: 200vw;
+top: -100vw;
+right: -100vw;
+z-index: 5;
+transition: all .5s ease-in-out;
+box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+} 
+nav.visible li:nth-child(2) {
+width: 170vw;
+height: 170vw;
+top: -85vw;
+right: -85vw;
+z-index: 5;
+transition: all .6s ease-in-out;
+box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+}  
+nav.visible li:nth-child(3){
+width: 140vw;
+height: 140vw;
+top: -70vw;
+right: -70vw;
+z-index: 5;
+transition: all .7s ease-in-out;
+box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+}
+nav.visible li:nth-child(4){
+  width: 100vw;
+  height: 100vw;
+  top: -55vw;
+  right: -55vw;
+  z-index: 5;
+  transition: all .7s ease-in-out;
+  box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+}
+nav.visible li:last-child{
+width: 50vw;
+height: 50vw;
+top: -25vw;
+right: -25vw;
+z-index: 5;
+transition: all .8s ease-in-out;
+box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+}
+
+/* text positioning */
+nav.visible li:first-child a {
+line-height: 275vw !important;
+text-indent: 15vw !important;
+}
+
+nav.visible li:nth-child(2) a {
+line-height: 240vw !important;
+text-indent:15vw !important;
+}
+
+nav.visible li:nth-child(3) a {
+line-height: 200vw !important;
+text-indent:12vw !important;
+}
+nav.visible li:nth-child(4) a {
+line-height: 160vw !important;
+text-indent:12vw !important;
+}
+nav.visible li:nth-child(5) a {
+line-height: 115vw !important;
+text-indent:12vw !important;
+}
+nav.visible li:last-child a {
+line-height: 70vw !important;
+text-indent:12vw !important;
+}
+
+
+/* for content style */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 30px;
+
+}
+
+/* set background */   
+.parallax {
+    background-image: url('../images/imgaadira.png');
+  
+    /* Set a specific height */
+    min-height: 200px; 
+    width: auto;
+    margin: 0%;
+    padding: 0;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* style box  */
+.assign, .learout, .medas, .learnout{
+    margin: 5px;
+    padding: 50px;
+    background-color: rgb(217, 217, 217);
+    width: 900px;
+    height: 400px;
+    overflow: auto;
+    text-align: justify;
+    border-radius: 20px;
+
+
+}
+
+/* background color and aligmment */
+body{
+    background-color:rgb(38, 38, 38) ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+/* padding on main */
+main{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* general styling of paragraphs */
+p{ 
+    color:rgb(217, 217, 217);
+    padding: 20px;
+    text-align: justify; 
+    line-height: 25px; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.class{
+    row-gap: 40px;
+    padding: 40px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+}
+
+.ind{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  width: auto;
+}    
+
+.btn{
+  text-decoration: none;
+  background-color: rgb(217, 217, 217); 
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+}
+
+.btn1{
+  text-decoration: none;
+  background-color: rgb(38, 38, 38); 
+  color: rgb(217, 217, 217);
+  padding: 20px 30px;
+
+
+}
+
+/* style and position button */
+.class .btn {
+  background-color: rgb(38, 38, 38);
+  color: rgb(217, 217, 217);
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 20%;
+  display: flex;
+}
+
+img{
+  height: 150px;
+  width: auto;
+  border-radius: 20%;
+}
+
+
+
+/* styling footer  */
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  
+}
+
+/* styling my footer images*/
+.email,.face,.insta{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+/* read more display */
+#more{
+    display: none; 
+    color: rgba(240,240,240,255);
+}
+
+/* styling read more button */
+#btn{
+    color: black;
+    padding: 20px;
+
+}
+
+/* styling links */
+.linkbutton{
+  color: rgb(217, 217, 217);
+  background-color: rgb(38, 38, 38);
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+
+    
+
